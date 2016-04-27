@@ -1,0 +1,30 @@
+body{margin: 0;padding: 0; background:url(../Asset/dot.svg);}
+
+header {
+    text-align: center;
+}
+
+#containair {
+    width: 1200px;
+    height: 2550px;
+    margin: 0 auto;
+    background: rgb(255,255,255);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap:wrap;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    align-content: space-around;
+}
+#containair > div{ width:150px; height:150px; border: 1px solid #a2a2a2;}
+#containair > div:hover{ width:150px; height:150px; border: 1px solid #9b0202;}
