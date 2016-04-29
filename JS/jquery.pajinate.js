@@ -26,10 +26,10 @@
 			num_page_links_to_display : 20,
 			start_page : 0,
 			wrap_around : false,
-			nav_label_first : 'First',
-			nav_label_prev : 'Prev',
-			nav_label_next : 'Next',
-			nav_label_last : 'Last',
+			nav_label_first : 'Premier', // Premier - First
+			nav_label_prev : 'Précédent', // Précédent - Prev
+			nav_label_next : 'Suivant', // Suivant - Next
+			nav_label_last : 'Dernier', // Dernier - Last
 			nav_order : ["first", "prev", "num", "next", "last"],
 			nav_label_info : 'Showing {0}-{1} of {2} results',
             show_first_last: true,
