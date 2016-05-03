@@ -1,10 +1,7 @@
-/*
-body{margin: 0;padding: 0; background:url(../Asset/dot.svg);}
 
-*/
-html,body{height: 100%;}
+html, body{height:100%;}
 *{box-sizing: border-box;}
-body{margin: 0px; padding: 0px;}
+body{margin: 0;padding: 0; background:url(../Asset/dot.svg);}
 #wrapper{
     display: flex;
     flex-flow: column ;
@@ -12,34 +9,38 @@ body{margin: 0px; padding: 0px;}
 }
 
 header {
-    flex: 1;
-    max-height: 120px;
+    z-index: 10;
+    max-height:90px;
     width: auto;
     text-align: center;
-    background: rgba(44, 144, 36, 0.53);
+    background: rgba(44, 144, 36, 0.90);
+    box-shadow: 0px 0px 10px 5px rgb(31, 42, 30);
 }
 
 /*container contient le contener de vignettes et les barre de nav */
 .container{
-    flex:4;
+    flex: auto;
+    z-index: 9;
     display: flex;
     flex-flow: row wrap;
-    width: 770px;
+    max-width: 80%;
     margin: 0 auto;
     border: 1px solid rgba(27, 67, 24, 0.8);
+    background: #fff;
+    box-shadow: 0px 10px 10px -5px rgb(31, 42, 30);
 }
-.container:nth-child(1){color: red; border: 1px solid black;}
+.container:nth-child(1){align-self:flex-end;}
+
 /*content contient les vignettes*/
 .content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+    align-content: stretch;
 }
-.content > div{min-width: 100px; max-width: 150px;min-height: 100px;max-height: 150px; border: 1px solid rgba(27, 67, 24, 0.8);padding: 5px;margin:5px;}
+.content > div{min-width: 100px; min-height: 100px; border: 1px solid rgba(27, 67, 24, 0.8);padding: 5px;margin:5px;}
 .content > div:hover{border: 1px solid rgba(44, 144, 36,0.8);box-shadow:0px 0px 5px 5px rgba(44, 144, 36, 0.53);}
 
 
 
 /*footer*/
-footer{flex:1; max-height: 100px; background: rgba(44, 144, 36, 0.53);}
+footer{min-height:80px; max-height:100px; background: rgba(44, 144, 36, 0.53);}
